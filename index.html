@@ -1,246 +1,267 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+<title>3-phase</title>
 
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="bootstrap-datepicker.XX.js" charset="UTF-8"></script>
 <script nonce="" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+<script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
 
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
 </head>
 <body>
-
+  
+<!-- navigation bar -->
 <nav class="navbar navbar-dark bg-dark ">
     <div class="container-fluid  ">
-      <a class="navbar-brand text-primary">GESTATUS.COM</a>
+      <a class="navbar-brand" href="#"><span class="text-primary">GESTATUS</span>.COM</a>
+
       <form class="d-flex ">
         <button class="btn btn-light me-md-4 fa fa-tachometer"> Dasboard</button>
         <button class="btn btn-light fa fa-power-off"> Logout</button>
       </form>
     </div>
 </nav>
+
 <div class="container-fluid  ">
-    <div class="row ">
-        <div class="col-3 border-right border-dark ">
-            <h3 class="fw-bold">Details Of controller</h3>
-            <div class="card border-dark border-3 mb-3 rounded-0" >
-                <div class="card-body">
-                    <div class="container-fluid">
-                        <div class="row row-cols-2 ">
-                          <div class="col text-center">
-                            <i class="fa fa-map-marker fa-2x text-primary " aria-hidden="true"></i>
-                            <p class=" fs-6 m-0 p-0">Alwar,Rajasthan</p>
-                            <p class="text-muted fs-6 m-0 p-0">location</p>
-                          </div>
-                          <div class="col text-center">
-                            <i class="fa fa-mobile fa-2x text-danger " aria-hidden="true"></i>
-                            <p class=" fs-6 m-0 p-0">DSE 4522</p>
-                            <p class="text-muted fs-6 m-0 p-0">Controller</p>
-                          </div>
-                          <div class="col text-center">
-                            <i class="fa fa-chevron-down fa-2x text-danger " aria-hidden="true"></i>
-                            <p class=" fs-6 m-0 p-0">20</p>
-                            <p class="text-muted fs-6 m-0 p-0">Gemset KVA</p>
-                          </div>
-                          <div class="col text-center">
-                            <i class="fa fa-power-off fa-2x text-danger " aria-hidden="true"></i>
-                            <p class=" fs-6 m-0 p-0">1</p>
-                            <p class="text-muted fs-6 m-0 p-0">Phase</p>
-                          </div>
-                        
-                        </div>
-                      </div>
-                </div>
-              </div>
-              <h3 class="fw-bold">Fault Status</h3>
-              <div class="card border-dark border-3 mb-3 rounded-0" >
-                <div class="card-body">
-                    <div class="container-fluid">
-                        <div class="row ">
-                          <table class="table">
-                            
-                            <tbody>
-                              <tr>
-                                <td>                    
-                                  <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
-                                </td>
-                                <td>
-                                  <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>                    
-                                  <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
-                                </td>
-                                <td>
-                                  <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>                    
-                                  <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
-                                </td>
-                                <td>
-                                  <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>                    
-                                </td>
-                                <td>
-                                  <i class="fa fa-dot-circle-o text-danger" ><a class="text-dark"> Over Voltage</a></i>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          
-  
-                          
-                        </div>
-                      </div>
-                </div>
-              </div>
-              <h3 class="fw-bold">Report Generation</h3>
-              <button class="btn btn-info mb-3">CSV</button>
-              <h3 class="fw-bold">Explore specific data</h3>
-              <button class="btn btn-primary">Click here</button>     
-              
-       </div>
-       <div class="col">  
-        <div class="row mt-4 mb-2 justify-content-center"> 
-          <div class="card mb-2 border-0 justify-content-start" style="width: 8rem;">
-              <h6 class="card-subtitle mb-2 text-muted text-center">Grid</h6>
-              <img class="card-img " src="/img/grid.png" alt="">
-          </div>
-          <div class="card mb-2 mt-4 border-0" style="width: auto; ">
-              <img class="card-img " style="width: 200px;height: 100px;" src="/img/remove.png" alt="">     
-          </div>
-          <div class="card mb-2 border-0 justify-content-start" style="width: 8rem; ">
-            <h6 class="card-subtitle mb-2 text-muted text-center">Factory</h6>
-            <img class="card-img " src="/img/factory.png" alt=""> 
-          </div>
-          <div class="card mb-2 mt-4 border-0" style="width: auto; ">
-              <img class="" style="width: 200px;height: 100px;" src="/img/remove (1).png" alt="">
-          </div>
-          <div class="card mb-2 border-0 justify-content-start" style="width: 10rem; ">
-            <h6 class="card-subtitle mb-2 text-muted text-center">Diesel Generator</h6>
-               <img class="card-img " style="width: 6rem; height: 6rem;" src="/img/dgon.png" alt="">
-          </div>
-
-          <hr>
-
-        </div>
-
-        <div class="row ">
-          <div class="row">
-            <h4 class="fw-bold text-center">Generator parameters</h4>
-        </div>
-        <div class="col">
-          <div class="row">
-            <div class="col-sm-6">
-
-              <div class="card border-0 pt-4" style="width: 11rem;">
-                <canvas class=" " style="width:13rem;" id="volt-gauge"></canvas>
-
-                <div class="card-body pt-3 pr-1 pl-5 ">
-                
-                  <h5 class="text-center text-dark" style="border-width:4px; border-style:solid;">Avg:230</h5>
-                  <h5 class="text-center text-dark" style="border-width:4px; border-style:solid;">RY:230</h5>
-                  <h5 class="text-center text-dark" style="border-width:4px; border-style:solid;">YB:230</h5>
-                  <h5 class="text-center text-dark" style="border-width:4px; border-style:solid;">BR:230</h5>       
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 pl-0">
-
-              <div class="card border-0 pt-4" style="width: 11rem;">
-                <canvas class=" " style="width:13rem;" id="aa-gauge"></canvas>
-
-                <div class="card-body pt-3 pr-0 pl-5" >
-
-                  <h5 class="text-center text-dark" style="border-width:4px; border-style:solid;">Avg:23</h5>
-                  <h5 class="text-center text-dark" style="border-width:4px; border-style:solid;">R:23</h5>
-                  <h5 class="text-center text-dark" style="border-width:4px; border-style:solid;">Y:23</h5>
-                  <h5 class="text-center text-dark" style="border-width:4px; border-style:solid;">B:23</h5>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-            
-        </div>
-        <div class="col p-0">
-
-          <div class="row">
-            <div class="col-sm-6 pr-4">
-              <div class="card  border-2" style="width: 10rem; height: auto;">
-                <h6 class="card-header">RPM</h6>
-                <div class="card-body ps-0">
-                  <canvas class="" style="width: 9rem; " id="rpm-gauge"></canvas>
-
+  <div class="row ">
+    <div class="col-3 border-right border-dark ">
+      <!-- Details Of controller -->
+      <h4 class="fw-bold">Details Of controller</h4>
+        <div class="card border-dark border-3 mb-1 rounded-0" >
+          <div class="card-body p-1">
+              <div class="container-fluid">
+                  <div class="row row-cols-2 ">
+                    <div class="col text-center pb-1">
+                      <i class="fa fa-map-marker fa-2x text-primary " aria-hidden="true"></i>
+                      <p class=" fs-6 m-0 p-0">Alwar,Rajasthan</p>
+                      <p class="text-muted fs-6 m-0 p-0">location</p>
+                    </div>
+                    <div class="col text-center pb-1">
+                      <i class="fa fa-mobile fa-2x text-danger " aria-hidden="true"></i>
+                      <p class=" fs-6 m-0 p-0">DSE 4522</p>
+                      <p class="text-muted fs-6 m-0 p-0">Controller</p>
+                    </div>
+                    <div class="col text-center">
+                      <i class="fa fa-chevron-down fa-2x text-danger " aria-hidden="true"></i>
+                      <p class=" fs-6 m-0 p-0">20</p>
+                      <p class="text-muted fs-6 m-0 p-0">Gemset KVA</p>
+                    </div>
+                    <div class="col text-center">
+                      <i class="fa fa-power-off fa-2x text-danger " aria-hidden="true"></i>
+                      <p class=" fs-6 m-0 p-0">3</p>
+                      <p class="text-muted fs-6 m-0 p-0">Phase</p>
+                    </div>
                   
-                </div> 
-              </div>
-            </div>
-            <div class="col-sm-6 px-3 ">
-              <div class="card  border-2" style="width: 10rem; height: auto;">
-                <h6 class="card-header">Oil Pressure</h6>
-                <div class="card-body ps-0">
-                  <canvas class="" style="width: 9rem; " id="oil-gauge"></canvas>
-                </div> 
+                  </div>
+                </div>
+          </div>
+        </div>
+        <!-- Fault Status -->
+        <h4 class="fw-bold">Fault Status</h4>
+        <div class="card border-dark border-3 mb-1 rounded-0" >
+          <div class="card-body py-0">
+              <div class="container-fluid">
+                  <div class="row ">
+                    <table class="table ">
+                      
+                      <tbody>
+                        <tr >
+                          <td class="border-0 py-2">                    
+                            <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
+                          </td>
+                          <td class="border-0 py-2 ">
+                            <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
+                          </td>
+                        </tr>
+                        <tr >
+                          <td class="border-0 py-2">                    
+                            <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
+                          </td>
+                          <td class="border-0 py-2">
+                            <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="border-0 py-2">                    
+                            <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
+                          </td>
+                          <td class="border-0 py-2">
+                            <i class="fa fa-dot-circle-o text-success" ><a class="text-dark"> Over Voltage</a></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="border-0 pt-2 pb-0">   
+                            <i class="fa fa-dot-circle-o text-danger" ><a class="text-dark"> Over Voltage</a></i>                                             
+                          </td>
+                          <td class="border-0 pt-2 pb-0">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                
+                  </div>
+                </div>
+          </div>
+        </div>
+        <!-- Report Generation -->
+        <h4 class="fw-bold">Report Generation</h4>
+        <button class="btn btn-info mb-1">CSV</button>
+
+        <!-- Explore specific data -->
+        <div class="">
+          <h4 class="fw-bold">Explore specific data</h4>
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+            Click here
+          </button>
+        
+          <!-- The Modal -->
+          <div class="modal modal-" id="myModal">
+            <div class="modal-dialog modal-lg  modal-dialog-centered">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Specific Data Overview</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form class="row g-3">
+                    <div class="col-md-4">
+                      <select id="inputState" class="form-select">
+                        <option selected>Main L1 Voltage</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <input class="form-control" type="date" id="date" >
+                    </div>
+                    <div class="col-md-4">
+                      <input class="form-control" type="date" id="date1" >
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="submit" class="btn btn-success">Submit</button>
+                      <button type="button" class="btn btn-danger " data-dismiss="modal">Close</button>
+                    </div>  
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card mb-2 ms-2 border-0" style="width: auto; height: auto;">
-            <div class="card-body">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <th>Run Hour</th>
-                    <td>6653.5</td>
-                    <td>Hrs</td>
-                  </tr>
-                  <tr>
-                    <th>Service Hour</th>
-                    <td>5553</td>
-                    <td>Hrs</td>
-                  </tr>
-                  <tr>
-                    <th>Power factor</th>
-                    <td>0</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> 
-          </div>
-        </div>  
+        </div>
+    </div>
+      <!-- coloum 2 -->
+    <div class="col">  
+      <div class="row mt-2 mb-0 pb-0 justify-content-center"> 
+        <div class="card mb-0 border-0 justify-content-start" style="width: 7rem;">
+            <h6 class="card-subtitle mb-2 text-muted text-center">Grid</h6>
+            <img class="card-img " src="/img/grid.png" alt="">
+        </div>
+        <div class="card mb-2 mt-4 border-0" style="width: auto; ">
+            <img class="card-img " style="width: 200px;height: 100px;" src="/img/remove.png" alt="">     
+        </div>
+        <div class="card mb-2 border-0 justify-content-start" style="width: 7rem; ">
+          <h6 class="card-subtitle mb-0 text-muted text-center">Factory</h6>
+          <img class="card-img " src="/img/factory.png" alt=""> 
+        </div>
+        <div class="card mb-2 mt-4 border-0" style="width: auto; ">
+            <img class="" style="width: 200px;height: 100px;" src="/img/remove (1).png" alt="">
+        </div>
+        <div class="card mb-2 border-0 justify-content-start" style="width: 10rem; ">
+          <h6 class="card-subtitle mb-0 text-muted text-center">Diesel Generator</h6>
+              <img class="card-img " style="width: 88px; height: 88px;" src="/img/dgon.png" alt="">
+        </div>
 
-          <div class="col">
+        <hr class="m-0 p-0">
 
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="card mb-2 ms-2 border-2" style="width: 10rem; height: auto;">
-                  <h6 class="card-header">Fuel</h6>
-                  <div class="card-body ps-0">
-                    <canvas class="" style="width: 9rem; " id="fuel-gauge"></canvas>
-                  </div> 
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="card mb-2 ms-2 border-2" style="width: 10rem; height: auto;">
-                  <h6 class="card-header">Temperature</h6>
-                  <div class="card-body">
-                    <canvas class="" style="width: 9rem; " id="xyz-gauge"></canvas>
-                  </div> 
-                </div>
+      </div>
+
+      <!-- Generator parameters -->
+
+      <div class="row ">
+          <h4 class="fw-bold text-center">Generator parameters</h4>
+      </div>
+
+      <div class="row ">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- volt-gauge -->
+            <div class="col-2 p-0 m-0">
+              <div class="card m-0 p-0 border-0" >
+                <div class="card-body p-0 ">
+                  <div class="myDIV2">
+                    <canvas class="" style="width: 12rem; " id="volt-gauge"></canvas>
+                  </div>
+                  <!-- hidden data -->
+                  <div class="mx-3 hide2">
+                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">Avg:230</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">RY:230</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">YB:230</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">BR:230</h5>       
+                  </div>
+                </div> 
               </div>
             </div>
-            <div class="card mb-2 ms-2 border-0" style="width: auto; height: auto;">
-              <div class="card-body">
+            <!-- A-gauge -->
+            <div class="col-2 p-0 m-0 ">
+              <div class="card m-0 p-0 border-0" >
+                <div class="card-body p-0 ">
+                  <div class="myDIV">
+                    <canvas class="" style="width: 12rem; " id="aa-gauge"></canvas>
+                  </div>
+                  <!-- hidden data -->
+                  <div class="mx-3 hide">
+                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">Avg:23</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">R:23</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">Y:23</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">B:23</h5>
+                  </div>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-4 m-0 p-1 ">
+              <div class="row ">
+                <!-- rpm-gauge -->
+                <div class="col-6 p-0">
+                  <div class="card m-0 p-0 border-2" >
+                    <h6 class="card-header">RPM</h6>
+                    <div class="card-body p-0">
+                      <canvas class="" style="width: 9rem; " id="rpm-gauge"></canvas>
+                    </div> 
+                  </div>
+                </div>
+                <!-- fuel-gauge -->
+                <div class="col-6 p-0">
+                  <div class="card m-0 p-0 border-2" >
+                    <h6 class="card-header">Fuel</h6>
+                    <div class="card-body p-0">
+                      <canvas class="" style="width: 9rem; " id="fuel-gauge"></canvas>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="row container-fluid">
                 <table class="table">
                   <tbody>
                     <tr>
@@ -260,17 +281,67 @@
                     </tr>
                   </tbody>
                 </table>
-              </div> 
+              </div>
             </div>
-          </div>  
 
-          <!-- <div id='myChart'></div>  -->
+            <div class="col-4 m-0 p-1">
+              <div class="row ">
+                <!-- oil-gauge -->
+                <div class="col-6 p-0">
+                  <div class="card m-0 p-0 border-2" >
+                    <h6 class="card-header">Oil Pressure</h6>
+                    <div class="card-body p-0" >
+                      <canvas class="" style="width: 9rem; " id="oil-gauge"></canvas>
+                    </div> 
+                  </div>
+                </div>
+                <!-- Temperature-gauge -->
+                <div class="col-6 p-0">
+                  <div class="card m-0 p-0 border-2" >
+                    <h6 class="card-header">Temperature</h6>
+                    <div class="card-body p-0">
+                      <canvas class="" style="width: 9rem; " id="xyz-gauge"></canvas>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="row container-fluid">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <th>Run Hour</th>
+                      <td>6653.5</td>
+                      <td>Hrs</td>
+                    </tr>
+                    <tr>
+                      <th>Service Hour</th>
+                      <td>5553</td>
+                      <td>Hrs</td>
+                    </tr>
+                    <tr>
+                      <th>Power factor</th>
+                      <td>0</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+  
+          </div> 
         </div>
-        <div class="row">
-          <hr>
+      </div>
+      
+      <!-- Recent Data -->
 
-          <h4 class="fw-bold">Recent Data</h4>
-          <table class="table m-2">
+      <div class="row">
+        <hr class="m-0 p-0">
+        <h4 class="fw-bold">Recent Data <i class="fa  fa-caret-down" aria-hidden="true" data-bs-toggle="collapse" data-bs-target="#demo"></i>
+        </h4>
+        
+        <div class="container-fluid collapse" id="demo">
+          <table class="table table-borderless ">
             <thead>
               <tr>
                 <th scope="col">S.no</th>
@@ -284,7 +355,6 @@
                 <th scope="col">volt</th>
                 <th scope="col">current</th>
                 <th scope="col">power</th>
-
               </tr>
             </thead>
             <tbody>
@@ -329,17 +399,14 @@
               </tr>
             </tbody>
           </table>
-
         </div>
-
-        
-
-       </div>
-         
+      </div>
     </div>
+         
+  </div>
+</div>
 
 
-<script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
 <script>
 		var opts = {
 	angle: -0.19, // The span of the gauge arc
@@ -618,64 +685,6 @@ gauge.set("{% if vid.g1nvolt != 0.00 %}1530{% else %}0{% endif %}}"); // set act
 
 </script>
    
-
-    
-   <script>
-    // ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
-    var myConfig7 = {
-      "type": "gauge",
-      "scale-r": {
-        "aperture": 200,
-        "values": "0:100:20",
-        "center": {
-          "size": 5,
-          "background-color": "#66CCFF #FFCCFF",
-          "border-color": "none"
-        },
-        "ring": {
-          "size": 10,
-          "rules": [{
-              "rule": "%v >= 0 && %v <= 20",
-              "background-color": "red"
-            },
-            {
-              "rule": "%v >= 20 && %v <= 40",
-              "background-color": "orange"
-            },
-            {
-              "rule": "%v >= 40 && %v <= 60",
-              "background-color": "yellow"
-            },
-            {
-              "rule": "%v >= 60 && %v <= 80",
-              "background-color": "green"
-            },
-            {
-              "rule": "%v >= 80 && %v <=100",
-              "background-color": "blue"
-            }
-          ]
-        },
-        "labels": ["5", "10", "15", "20", "25", " 30"] //Scale Labels
-      },
-      "plot": {
-        "csize": "5%",
-        "size": "100%",
-        "background-color": "#000000"
-      },
-      "series": [{
-        "values": [75]
-      }]
-    };
- 
-    zingchart.render({
-      id: 'myChart',
-      data: myConfig7,
-      height: "50%",
-      width: "50%"
-    });
-  </script>
-
 
 </body>
 </html>

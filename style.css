@@ -1,0 +1,22 @@
+
+.hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+
+.hide2 {
+  display: none;
+}
+    
+.myDIV2:hover + .hide2 {
+  display: block;
+  color: red;
+}
+.noborder{
+  border:none;
+  
+  }
