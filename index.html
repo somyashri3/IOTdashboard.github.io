@@ -122,13 +122,13 @@
         </div>
         <!-- Report Generation -->
         <h4 class="fw-bold">Report Generation</h4>
-        <button class="btn btn-info mb-1">CSV</button>
+        <button class="btn btn-info mb-1 py-0">CSV</button>
 
         <!-- Explore specific data -->
         <div class="">
           <h4 class="fw-bold">Explore specific data</h4>
           <!-- Button to Open the Modal -->
-          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+          <button type="button" class="btn btn-info py-0" data-toggle="modal" data-target="#myModal">
             Click here
           </button>
         
@@ -171,20 +171,20 @@
     </div>
       <!-- coloum 2 -->
     <div class="col">  
-      <div class="row mt-2 mb-0 pb-0 justify-content-center"> 
+      <div class="row mt-3 mb-0 pb-0 justify-content-center"> 
         <div class="card mb-0 border-0 justify-content-start" style="width: 7rem;">
             <h6 class="card-subtitle mb-2 text-muted text-center">Grid</h6>
             <img class="card-img " src="/img/grid.png" alt="">
         </div>
         <div class="card mb-2 mt-4 border-0" style="width: auto; ">
-            <img class="card-img " style="width: 200px;height: 100px;" src="/img/remove.png" alt="">     
+            <img class="card-img " style="width: 200px;height: 100px;" src="/img/lineR.png" alt="">     
         </div>
         <div class="card mb-2 border-0 justify-content-start" style="width: 7rem; ">
           <h6 class="card-subtitle mb-0 text-muted text-center">Factory</h6>
           <img class="card-img " src="/img/factory.png" alt=""> 
         </div>
         <div class="card mb-2 mt-4 border-0" style="width: auto; ">
-            <img class="" style="width: 200px;height: 100px;" src="/img/remove (1).png" alt="">
+            <img class="" style="width: 200px;height: 100px;" src="/img/lineG.png" alt="">
         </div>
         <div class="card mb-2 border-0 justify-content-start" style="width: 10rem; ">
           <h6 class="card-subtitle mb-0 text-muted text-center">Diesel Generator</h6>
@@ -197,7 +197,7 @@
 
       <!-- Generator parameters -->
 
-      <div class="row ">
+      <div class="row pl-0 pr-3 ">
           <h4 class="fw-bold text-center">Generator parameters</h4>
       </div>
 
@@ -205,18 +205,18 @@
         <div class="container-fluid">
           <div class="row">
             <!-- volt-gauge -->
-            <div class="col-2 p-0 m-0">
+            <div class="col-2 p-0  m-0">
               <div class="card m-0 p-0 border-0" >
                 <div class="card-body p-0 ">
                   <div class="myDIV2">
-                    <canvas class="" style="width: 12rem; " id="volt-gauge"></canvas>
+                    <canvas class="border border-0 pr-3 mt-2 border-dark p-2 pl-0" style="width: 14rem; " id="volt-gauge"></canvas>
                   </div>
                   <!-- hidden data -->
-                  <div class="mx-3 hide2">
-                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">Avg:230</h5>
-                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">RY:230</h5>
-                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">YB:230</h5>
-                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">BR:230</h5>       
+                  <div class="ml-5 hide2">
+                    <h5 class="text-center text-dark" style="border-width:3px;border-color: grey; border-style:solid;">Avg:230</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px;border-color: grey; border-style:solid;">RY:230</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px;border-color: grey; border-style:solid;">YB:230</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px;border-color: grey; border-style:solid;">BR:230</h5>       
                   </div>
                 </div> 
               </div>
@@ -225,27 +225,27 @@
             <div class="col-2 p-0 m-0 ">
               <div class="card m-0 p-0 border-0" >
                 <div class="card-body p-0 ">
-                  <div class="myDIV">
-                    <canvas class="" style="width: 12rem; " id="aa-gauge"></canvas>
+                  <div class="myDIV ">
+                    <canvas class="border border-0 border-dark mt-2 pr-3  p-2" style="width: 14rem; " id="aa-gauge"></canvas>
                   </div>
                   <!-- hidden data -->
-                  <div class="mx-3 hide">
-                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">Avg:23</h5>
-                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">R:23</h5>
-                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">Y:23</h5>
-                    <h5 class="text-center text-dark" style="border-width:3px; border-style:solid;">B:23</h5>
+                  <div class="ml-5  hide">
+                    <h5 class="text-center text-dark" style="border-width:3px;border-color: grey; border-style:solid;">Avg:23</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px;border-color: grey; border-style:solid;">R:23</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px;border-color: grey; border-style:solid;">Y:23</h5>
+                    <h5 class="text-center text-dark" style="border-width:3px;border-color: grey; border-style:solid;">B:23</h5>
                   </div>
                 </div> 
               </div>
             </div>
 
-            <div class="col-4 m-0 p-1 ">
+            <div class="col-4 m-0 p-1 pl-5 ">
               <div class="row ">
                 <!-- rpm-gauge -->
                 <div class="col-6 p-0">
                   <div class="card m-0 p-0 border-2" >
                     <h6 class="card-header">RPM</h6>
-                    <div class="card-body p-0">
+                    <div class="card-body pt-2 p-0">
                       <canvas class="" style="width: 9rem; " id="rpm-gauge"></canvas>
                     </div> 
                   </div>
@@ -254,7 +254,7 @@
                 <div class="col-6 p-0">
                   <div class="card m-0 p-0 border-2" >
                     <h6 class="card-header">Fuel</h6>
-                    <div class="card-body p-0">
+                    <div class="card-body pt-2 p-0">
                       <canvas class="" style="width: 9rem; " id="fuel-gauge"></canvas>
                     </div> 
                   </div>
@@ -290,7 +290,7 @@
                 <div class="col-6 p-0">
                   <div class="card m-0 p-0 border-2" >
                     <h6 class="card-header">Oil Pressure</h6>
-                    <div class="card-body p-0" >
+                    <div class="card-body pt-2 p-0" >
                       <canvas class="" style="width: 9rem; " id="oil-gauge"></canvas>
                     </div> 
                   </div>
@@ -299,7 +299,7 @@
                 <div class="col-6 p-0">
                   <div class="card m-0 p-0 border-2" >
                     <h6 class="card-header">Temperature</h6>
-                    <div class="card-body p-0">
+                    <div class="card-body pt-2 p-0">
                       <canvas class="" style="width: 9rem; " id="xyz-gauge"></canvas>
                     </div> 
                   </div>
